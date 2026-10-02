@@ -1,0 +1,118 @@
+ * {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+ }
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Grey-500: hsl(234, 12%, 34%);
+    --Grey-400: hsl(212, 6%, 44%);
+    --White: hsl(0, 0%, 100%);
+    --attribution: hsl(228, 45%, 44%);
+    --font: "Poppins", sans-serif;
+ }
+ body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--White);
+    height: 100vh;
+    font-size: 0.875rem;
+ }
+ main{
+    width: 100%;
+    max-width: 700px;
+    font-family: var(--font);
+    font-size: 1rem;
+ }
+ .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ }
+  .h1{
+    font-weight: 200;
+    color: var(--Grey-500);
+ }
+ .h1-bold{
+    font-weight: 700;
+    color: var(--Grey-500);
+ }
+ .hero-text{
+    font-weight: 200;
+    color: var(--Grey-400);
+    margin-top: 1rem;
+    max-width: 550px;
+ }
+ .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 0.5rem 2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;     
+ }
+ article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1.5rem 1rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    box-shadow: 0px 10px 20px hsla(212, 6%, 44%, 0.40);
+    border: 7px solid transparent;
+    height: 210px;
+    width: 330px;
+    position: relative;
+   
+ }
+.card-supervisor{
+    border-top-color: var(--Cyan);
+    grid-column: 1 ;
+    grid-row: 1 / 3;
+}
+.card-team { 
+    border-top-color: var(--Red); 
+    grid-column: 2 ;
+    grid-row: 1; 
+}
+.card-karma {
+    border-top-color: var(--Orange); 
+    grid-column: 2 ;
+    grid-row: 2;
+}
+.card-calculator { 
+    border-top-color: var(--Blue); 
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+.h2{
+    font-weight: 500;
+    color: var(--Grey-500);
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+ }
+ .p{
+    font-weight: 200;
+    color: var(--Grey-400);
+ }
+.icon{
+    width: 45px;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;   
+ }
+ 
+ .attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+}
